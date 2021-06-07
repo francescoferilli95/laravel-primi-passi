@@ -13,6 +13,22 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// HOMEPAGE
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('homepage');
+})->name('home');
+
+// ABOUT
+Route::get('/about', function () {
+    return view('about');
+})->name('about');
+
+// CONTACTS
+Route::get('/contacts', function () {
+    return view('contacts');
+})->name('contact');
+
+// PRODUCTS
+Route::get('/products', function () {
+    return view('products');
+})->name('product');
